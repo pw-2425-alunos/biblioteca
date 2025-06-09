@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-#x+#=3ubjtm)388k(tvrbp(_=#$o*1-1@c=p_36n6nqb9iqxpb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['bibliotecalusofona.pythonanywhere.com', '127.0.0.1']
+ALLOWED_HOSTS = ['biblioteca.pw.deisi.ulusofona.pt', '127.0.0.1']
 
 
 # Application definition
