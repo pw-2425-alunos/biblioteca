@@ -1,0 +1,27 @@
+{
+  "Eça de Queirós": {
+    "nacionalidade": "Português",
+    "ano_nascimento": 1845,
+    "ano_falecimento": 1900
+  },
+  "Jorge Amado": {
+    "nacionalidade": "Brasileiro",
+    "ano_nascimento": 1912,
+    "ano_falecimento": 2001
+  },
+  "Mia Couto": {
+    "nacionalidade": "Moçambicano",
+    "ano_nascimento": 1955,
+    "ainda_vivo": true
+  },
+  "Fernando Pessoa": {
+    "nacionalidade": "Português",
+    "ano_nascimento": 1888,
+    "ano_falecimento": 1935
+  },
+  "José Saramago": {
+    "nacionalidade": "Português",
+    "ano_nascimento": 1922,
+    "ano_falecimento": 2010
+  }
+}

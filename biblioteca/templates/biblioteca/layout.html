@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Biblioteca</title>
+        <style>
+            body {
+                background: khaki;
+            }
+            .errorlist {
+                display:none;
+            }
+            header nav{
+                display:flex;
+                flex-direction:row;
+                justify-content: flex-start;
+                gap:5px;
+            }
+            footer {
+                position: fixed;
+                bottom: 10px;
+            }
+            table th {text-align:right;}
+            helptext {
+                font-size: 0.7em;
+                color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Biblioteca da Lusofonía</h1>
+            <nav>
+                <a href="{% url 'autores' %}"><button>Autores</button></a>
+                <a href="{% url 'generos' %}"><button>Géneros</button></a>
+                <a href="{% url 'pesquisa-autor' %}"><button>Pesquisa Autor</button></a>
+                
+                <div style="margin-left: auto;">
+                {% if request.user.is_authenticated %}
+                    Username:{{request.user.username}}
+                    <a href="{% url 'logout' %}"><button>Logout</button></a>
+                {% else %}
+                    <a href="{% url 'login' %}"><button>Login</button></a>
+                {% endif %}
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            {% block content %}
+            {% endblock %}
+
+        </main>
+
+        <footer>
+            <p>Universidade Lusófona</p>
+        </footer>
+    </body>
+</html>

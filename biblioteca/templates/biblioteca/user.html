@@ -1,0 +1,14 @@
+{% extends 'biblioteca/layout.html' %}
+
+{% block content %}
+
+    <h3>Bemvido, {{request.user.first_name}} {{request.user.last_name}}</h3>
+    
+    <ul>
+      <li>Username: {{request.user.username}}</li>
+      <li>Email: {{request.user.email}}</li>
+    </ul>
+    
+    <a href="{% url 'logout' %}">Logout</a>   
+
+{% endblock %}

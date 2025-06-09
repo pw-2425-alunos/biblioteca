@@ -1,0 +1,93 @@
+[
+  {
+    "titulo": "Capitães da Areia",
+    "autor": "Jorge Amado",
+    "genero": "Romance",
+    "ano_publicacao": 1937,
+    "lingua": "Português"
+  },
+  {
+    "titulo": "Gabriela, Cravo e Canela",
+    "autor": "Jorge Amado",
+    "genero": "Romance",
+    "ano_publicacao": 1958,
+    "lingua": "Português"
+  },
+  {
+    "titulo": "Dona Flor e Seus Dois Maridos",
+    "autor": "Jorge Amado",
+    "genero": "Romance",
+    "ano_publicacao": 1966,
+    "lingua": "Português"
+  },
+  {
+    "titulo": "O Primo Basílio",
+    "autor": "Eça de Queirós",
+    "genero": "Romance",
+    "ano_publicacao": 1878,
+    "lingua": "Português"
+  },
+  {
+    "titulo": "Os Maias",
+    "autor": "Eça de Queirós",
+    "genero": "Romance",
+    "ano_publicacao": 1888,
+    "lingua": "Português"
+  },
+  {
+    "titulo": "O Crime do Padre Amaro",
+    "autor": "Eça de Queirós",
+    "genero": "Romance",
+    "ano_publicacao": 1875,
+    "lingua": "Português"
+  },
+  {
+    "titulo": "Terra Sonâmbula",
+    "autor": "Mia Couto",
+    "genero": "Romance",
+    "ano_publicacao": 1992,
+    "lingua": "Português"
+  },
+  {
+    "titulo": "A Chuva Pasmada",
+    "autor": "Mia Couto",
+    "genero": "Romance",
+    "ano_publicacao": 1997,
+    "lingua": "Português"
+  },
+  {
+    "titulo": "O Livro do Desassossego",
+    "autor": "Fernando Pessoa",
+    "genero": "Romance",
+    "ano_publicacao": 1982,
+    "lingua": "Português"
+  },
+  {
+    "titulo": "Mensagem",
+    "autor": "Fernando Pessoa",
+    "genero": "Poesia",
+    "ano_publicacao": 1934,
+    "lingua": "Português"
+  },
+  {
+    "titulo": "Ensaio Sobre a Cegueira",
+    "autor": "José Saramago",
+    "genero": "Romance",
+    "ano_publicacao": 1995,
+    "lingua": "Português"
+  },
+  {
+    "titulo": "Memorial do Convento",
+    "autor": "José Saramago",
+    "genero": "Romance",
+    "ano_publicacao": 1982,
+    "lingua": "Português"
+  },
+  {
+    "titulo": "O Ano da Morte de Ricardo Reis",
+    "autor": "José Saramago",
+    "genero": "Romance",
+    "ano_publicacao": 1984,
+    "lingua": "Português"
+  }
+]

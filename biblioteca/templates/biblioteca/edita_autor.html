@@ -1,0 +1,22 @@
+{% extends 'biblioteca/layout.html' %}
+
+{% block content %}
+    <h3>Edita Autor</h3>
+    
+    <form action="{% url 'edita_autor' autor.id %}" method="post" enctype='multipart/form-data'>
+      {% csrf_token %}
+      {{ form.as_p }}
+      <input type="submit" value="Guardar">
+    </form>  
+    
+    <a href="{% url 'autor' autor.id %}">
+      <button>Cancelar</button>
+    </a>
+
+    <a href="{% url 'apaga_autor' autor.id %}">
+      <button>Apagar autor e seus livros</button>
+    </a>
+  
+
+
+{% endblock %}

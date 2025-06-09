@@ -1,0 +1,11 @@
+
+            
+    <h3>Novo Autor</h3>
+    <form action="" method="post" enctype='multipart/form-data'>
+      {% csrf_token %}
+      Nome: <input type="text" name="nome">
+      Ano nascimento: <input type="number" name="ano_nascimento">
+      Nacionalidade: <input type="text" name="nacionalidade">
+      Retrato: <input type="file" name="retrato">
+      <input type="submit">
+    </form>      

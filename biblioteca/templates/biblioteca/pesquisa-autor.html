@@ -1,0 +1,23 @@
+{% extends 'biblioteca/layout.html' %}
+
+{% block content %}
+
+    <h2>Pesquisa por Autor</h2>
+    <form action="" method="post">
+      {% csrf_token %}
+      Pesquise um autor: <input type="text" name="pesquisa" value="{{ query }}">
+      <input type="submit" value="pesquisar">
+    </form>
+
+    {% if pesquisa %}
+      <p>Resultado da pesquisa por "{{ pesquisa }}":</p>
+      <ul>
+        {% for autor in autores  %}
+          <li> <a href="{% url 'autor' autor.id %}">{{ autor }}</a> </li>
+        {% empty %}  
+        não existem autores com '{{ pesquisa }}' 
+        {% endfor %}        
+      </ul>
+    {% endif %}
+
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'biblioteca/layout.html' %}
+
+{% block content %}
+    <p> {{ livro.titulo }}:</p>
+    <ul>
+        <li><a href="{% url 'autor' livro.autor.id %}">{{ livro.autor }}</a></li>
+        <li>{{ livro.genero }}</li>
+        <li>{{ livro.ano_publicacao }}</li>
+    </ul>
+{% endblock %}

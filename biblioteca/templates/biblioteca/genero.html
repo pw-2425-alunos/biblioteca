@@ -1,0 +1,13 @@
+{% extends 'biblioteca/layout.html' %}
+
+{% block content %}
+<h2>{{genero}}</h2>
+    <p>Lista de livros do género "{{genero}}":</p>
+    <ul>
+    {% for livro in livros %}
+        <li>
+            <a href="{% url 'livro' livro.id %}">{{ livro }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}
