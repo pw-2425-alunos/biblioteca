@@ -31,9 +31,16 @@ class LivroOut(Schema):
     ano_publicacao: int
     excerto: Optional[str] = None
     autor: AutorOut  
-    
+
+class LivroOutSemAutor(Schema):
+    id: int
+    titulo: str
+    genero: str
+    ano_publicacao: int
+    excerto: Optional[str] = None
+
 class AutorOutComLivros(AutorOut):
-    livros: List[LivroOut]
+    livros: List[LivroOutSemAutor]
     
 class ErrorSchema(Schema):
     detail: str
