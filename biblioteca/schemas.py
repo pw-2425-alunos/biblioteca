@@ -8,14 +8,9 @@ class AutorIn(Schema):
     nacionalidade: str
     retrato: Optional[str] = None # Tipo opcional: permite string ou None
 
-class AutorOut(Schema):
+class AutorOut(AutorIn):
     id: int
-    nome: str
-    ano_nascimento: int
-    nacionalidade: str
-    retrato: Optional[str] = None 
     
-
 # Schemas para Livro
 class LivroIn(Schema):
     titulo: str
@@ -24,12 +19,8 @@ class LivroIn(Schema):
     excerto: Optional[str] = None
     autor: int
 
-class LivroOut(Schema):
+class LivroOut(LivroIn):
     id: int
-    titulo: str
-    genero: str
-    ano_publicacao: int
-    excerto: Optional[str] = None
     autor: AutorOut  
 
 class LivroOutSemAutor(Schema):
